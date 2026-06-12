@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>缘账隐私政策</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --bg: #f7f7f8;
+      --card: #ffffff;
+      --text: #1f2328;
+      --subtext: #5b616e;
+      --border: #e7e7ea;
+      --accent: #c0392b;
+    }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, Arial, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+      line-height: 1.75;
+    }
+    .wrap {
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 32px 20px 48px;
+    }
+    .hero {
+      background: linear-gradient(180deg, #fff, #fbfbfc);
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      padding: 28px 24px;
+      box-shadow: 0 6px 22px rgba(0, 0, 0, 0.04);
+    }
+    h1 {
+      margin: 0 0 8px;
+      font-size: 30px;
+      line-height: 1.2;
+    }
+    .meta {
+      color: var(--subtext);
+      font-size: 14px;
+      margin-bottom: 0;
+    }
+    .content {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      margin-top: 18px;
+      padding: 24px;
+    }
+    h2 {
+      margin: 28px 0 10px;
+      font-size: 20px;
+      line-height: 1.3;
+    }
+    h2:first-of-type {
+      margin-top: 0;
+    }
+    p {
+      margin: 0 0 14px;
+    }
+    ul {
+      margin: 0 0 14px 20px;
+      padding: 0;
+    }
+    li {
+      margin: 6px 0;
+    }
+    .notice {
+      background: #fff6f3;
+      border-left: 4px solid var(--accent);
+      padding: 12px 14px;
+      border-radius: 12px;
+      color: #7a2d23;
+      margin-top: 18px;
+      font-size: 14px;
+    }
+    .footer {
+      color: var(--subtext);
+      font-size: 13px;
+      margin-top: 18px;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        color-scheme: dark;
+        --bg: #0f1115;
+        --card: #171a21;
+        --text: #e8eaf0;
+        --subtext: #a8afbf;
+        --border: #2a2f3a;
+        --accent: #ff7b6b;
+      }
+      .hero {
+        background: linear-gradient(180deg, #171a21, #14171d);
+      }
+      .notice {
+        background: rgba(255, 123, 107, 0.08);
+        color: #ffb8af;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <section class="hero">
+      <h1>缘账隐私政策</h1>
+      <p class="meta">最后更新：2026 年 6 月 12 日</p>
+      <p class="meta">适用于：缘账 iOS App</p>
+    </section>
+
+    <article class="content">
+      <h2>1. 数据存储</h2>
+      <p>缘账以本机 Core Data 作为默认存储方式，所有账目、联系人、事件、备注等信息首先保存在你的设备上。</p>
+
+      <h2>2. iCloud 同步</h2>
+      <p>当设备已登录并在系统设置中启用 iCloud 时，应用通过 Core Data + CloudKit 在你的 Apple ID 设备之间同步数据。若 iCloud 不可用，应用会提示同步状态，并可能回退为仅本地存储。</p>
+
+      <h2>3. 系统身份验证</h2>
+      <p>当你主动开启隐私安全锁后，应用会使用 Face ID、Touch ID 或设备密码进行本机解锁。验证信息由 iOS 系统处理，不会被应用读取、上传，也不会用于广告、画像或第三方共享。</p>
+
+      <h2>4. 导入与导出</h2>
+      <p>CSV 导入文件仅用于导入账簿数据；CSV / PDF 导出仅在你主动操作时生成，并由你选择分享给其他应用或联系人。</p>
+
+      <h2>5. 数据删除</h2>
+      <p>你可以在设置中清空全部数据。清空后，本机数据及同步数据将被删除；请在操作前确认已完成备份。</p>
+
+      <h2>6. 我们是否收集你的数据</h2>
+      <p>本应用不提供第三方广告，不通过独立服务器收集用于营销的个人数据。除系统层 iCloud 同步外，数据主要保留在你的设备和你的 iCloud 账户中。</p>
+
+      <h2>7. 联系我们</h2>
+      <p>如果你对数据处理有疑问，请通过 App Store 页面提供的联系方式与开发者联系。</p>
+
+      <div class="notice">
+        提示：如果你在系统设置中关闭 iCloud，同步数据将仅保存在本机。系统身份验证仅用于本机解锁，不会被上传。
+      </div>
+
+      <p class="footer">本页面可用于 App 内展示、App Store Connect 链接或后续官网隐私政策页。</p>
+    </article>
+  </div>
+</body>
+</html>
